@@ -33,15 +33,21 @@ The website's training checkpoints and quizzes are **formative**; they do not ad
 
 In NetBeans, create a **Java Application** project named `StudentGradeManagement`, using a suitable JDK. You may refer to `starter/StudentGradeManagement.java` for the minimum class structure, then write each feature yourself. The starter is **not the completed assessed submission**.
 
-## Publish this as a separate GitHub repository
+## GitHub repository and website deployment
 
-Create a public repository called **`CS101-Project-Coach`** (initially empty), then upload all the files **including** `.github/workflows/deploy-pages.yml`. In the repository's **Settings → Pages**, choose **GitHub Actions** as the source. The provided workflow deploys the static site on pushes to `main`.
+The project is already uploaded to the public repository:
 
-Expected link **after a successful deployment**:
+https://github.com/kayaniyasir/CS101-Project-Coach
 
-`https://kayaniyasir.github.io/CS101-Project-Coach/`
+**One-time GitHub Pages setup** (repository owner only):
 
-A live URL is **not** established merely by generating these files; the GitHub repository must be created and deployed first.
+1. Open [Settings → Pages](https://github.com/kayaniyasir/CS101-Project-Coach/settings/pages).
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Open the [deployment workflow](https://github.com/kayaniyasir/CS101-Project-Coach/actions/workflows/deploy-pages.yml).
+4. Select **Run workflow**, choose **main**, and wait for the green check mark.
+5. After GitHub reports successful deployment, the site should be available at https://kayaniyasir.github.io/CS101-Project-Coach/.
+
+If the run fails with *Get Pages site failed / Not Found*, Pages has not yet been enabled in the repository's Pages settings. This initial setup cannot be completed with the workflow's standard GitHub token.
 
 ## File layout
 
